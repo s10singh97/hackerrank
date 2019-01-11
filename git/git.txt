@@ -1,0 +1,34 @@
+
+clone
+push
+pull
+HEAD
+HEAD is a pointer, which always points to the latest commit in the branch. 
+
+git config --global user.name "Jerry Mouse"
+git config --global user.email "jerry@tutorialspoint.com"
+git config --list // git settings
+
+git add
+git status
+git diff
+git pull
+git push
+git log
+git stash
+git stash pop
+git mv string.c src/
+git mv string.c string_operations.c //renaming
+git rm string_operations
+
+git checkout command to obtain a deleted file from the local repository.
+git branch new_branch
+git checkout new_branch
+
+git branch -D test_branch //delete branch
+
+git branch -m new_branch wchar_support //renaming
+
+git merge origin/wchar_support
+
+git remote add origin https://github.com/kangralkar/testing_repo.git
