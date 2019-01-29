@@ -1,21 +1,21 @@
 // Let Us Understand Computer (HackerEarth)
 
 #include<iostream>
+#include<math.h>
 using namespace std;
 
-int bin(int n)
-{
-    int c = 0;
-    int base = 0;
-    while(n)
-    {
-        int d = n % 2;
-        base += d*10;
-        n /= 2;
-        c++;
-    }
-    return c;
-}
+// int bin(int n)
+// {
+//     int c = 0;
+//     // while(n)
+//     // {
+//     //     int d = n % 2;
+//     //     n /= 2;
+//     //     c++;
+//     // }
+//     c = int(ceil(log2(n)));
+//     return c;
+// }
 
 int main()
 {
@@ -28,7 +28,7 @@ int main()
         int flag = 0;
         for(int d = 1; d <= x; d++)
         {
-            if(bin(d) >= bin(int(x/d)))
+            if(int(ceil(log2(d))) >= int(ceil(log2(int(x/d)))))
                 flag++;
         }
         cout<<flag<<"\n";
